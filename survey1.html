@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey2.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <div class="form-container">
+        <form id="surveyForm">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required><br>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required><br>
+
+            <label for="country">Country:</label>
+            <select id="country" required>
+                <option value="">Select Country</option>
+                <!-- Add options for countries here -->
+            </select><br>
+
+            <label>Gender:</label>
+            <input type="checkbox" id="maleCheckbox"> Male
+            <input type="checkbox" id="femaleCheckbox"> Female<br>
+
+            <label for="profession">Profession:</label>
+            <input type="text" id="profession" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" required><br>
+
+            <button type="button" onclick="submitForm()">Submit</button>
+            <button type="button" onclick="resetForm()">Reset</button>
+        </form>
+    </div>
+
+    <div class="modal" id="myModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script src="survey3.js"></script>
+</body>
+</html>
